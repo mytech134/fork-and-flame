@@ -789,7 +789,7 @@ export default function Home() {
         </div>
 
         <p className="mt-16 text-xs tracking-widest text-neutral-600 uppercase">
-          © {new Date().getFullYear()} Fork & Flame · All rights reserved
+          © {2026} Fork & Flame · All rights reserved
         </p>
       </section>
     </div>
