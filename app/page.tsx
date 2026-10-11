@@ -1,7 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
+import {
+  motion,
+  AnimatePresence,
+  useScroll,
+  useTransform,
+  Variants,
+} from "framer-motion";
 import { useEffect, useState } from "react";
 import {
   Flame,
@@ -256,12 +262,12 @@ const badgeStyles: Record<Badge, string> = {
   New: "bg-fuchsia-500/10 text-fuchsia-400 border-fuchsia-500/30",
 };
 
-const fadeUp = {
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 40 },
-  visible: (i = 1) => ({
+  visible: (i: number = 1) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.08, duration: 0.7, ease: "easeOut" },
+    transition: { delay: i * 0.08, duration: 0.7, ease: "easeOut" as const },
   }),
 };
 
@@ -346,7 +352,6 @@ export default function Home() {
         id="top"
         className="relative z-10 flex min-h-screen flex-col items-center justify-center overflow-hidden px-6 pt-32 pb-24 text-center"
       >
-        {/* Background image with parallax */}
         <motion.div
           style={{ y: heroY, opacity: heroOpacity }}
           className="absolute inset-0 z-0"
@@ -415,7 +420,6 @@ export default function Home() {
           </a>
         </motion.div>
 
-        {/* Quick info strip */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -469,7 +473,6 @@ export default function Home() {
             </p>
           </motion.div>
 
-          {/* Category tabs */}
           <div className="mb-12 flex flex-wrap justify-center gap-2 md:gap-3">
             {menuData.map((section) => {
               const isActive = activeCategory === section.category;
@@ -503,7 +506,6 @@ export default function Home() {
             })}
           </div>
 
-          {/* Active category tagline */}
           <div className="mb-8 text-center">
             <AnimatePresence mode="wait">
               <motion.p
@@ -519,7 +521,6 @@ export default function Home() {
             </AnimatePresence>
           </div>
 
-          {/* Items grid */}
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             <AnimatePresence mode="popLayout">
               {active.items.map((item, i) => (
@@ -533,7 +534,6 @@ export default function Home() {
                   whileHover={{ y: -6 }}
                   className="group relative overflow-hidden rounded-2xl border border-neutral-800 bg-gradient-to-b from-neutral-900/80 to-neutral-950 transition-colors hover:border-amber-500/50"
                 >
-                  {/* Dish image */}
                   <div className="relative h-44 w-full overflow-hidden bg-gradient-to-br from-neutral-800 to-neutral-900">
                     {item.image ? (
                       <Image
@@ -550,7 +550,6 @@ export default function Home() {
                     )}
                     <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/20 to-transparent" />
 
-                    {/* Badges */}
                     {item.badges && item.badges.length > 0 && (
                       <div className="absolute left-3 top-3 flex flex-wrap gap-1.5">
                         {item.badges.map((b) => (
@@ -564,13 +563,11 @@ export default function Home() {
                       </div>
                     )}
 
-                    {/* Price pill */}
                     <span className="absolute right-3 top-3 rounded-full bg-neutral-950/80 px-3 py-1 text-sm font-bold text-amber-400 backdrop-blur">
                       {item.price}
                     </span>
                   </div>
 
-                  {/* Content */}
                   <div className="p-5">
                     <h3 className="text-lg font-semibold text-neutral-50 transition-colors group-hover:text-amber-400">
                       {item.name}
@@ -580,7 +577,6 @@ export default function Home() {
                     </p>
                   </div>
 
-                  {/* Glow on hover */}
                   <div className="pointer-events-none absolute -inset-px rounded-2xl opacity-0 blur transition-opacity duration-500 group-hover:opacity-100" />
                 </motion.article>
               ))}
