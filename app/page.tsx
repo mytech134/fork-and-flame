@@ -580,12 +580,10 @@ export default function Home() {
                 >
                   <div className="relative h-48 w-full overflow-hidden bg-gradient-to-br from-neutral-800 to-neutral-900">
                     {item.image ? (
-                      <Image
+                      <img
                         src={item.image}
                         alt={item.name}
-                        fill
-                        sizes="(max-width: 768px) 100vw, 33vw"
-                        className="object-cover transition-transform duration-700 group-hover:scale-110"
+                        className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
                       />
                     ) : (
                       <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-orange-950/40 via-neutral-900 to-red-950/40">
