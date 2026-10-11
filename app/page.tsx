@@ -50,33 +50,40 @@ const menuData: MenuCategory[] = [
         description:
           "Grilled octopus, smoked paprika, lemon oil, fingerling potatoes",
         price: "$18",
-        image: "/menu/octopus.jpg",
+        image:
+          "https://images.unsplash.com/photo-1559847844-5315695dadae?w=800&q=80",
         badges: ["GF", "Signature"],
       },
       {
         name: "Flame-Kissed Burrata",
         description: "Torched burrata, heirloom tomatoes, basil ash, sourdough",
         price: "$16",
-        image: "/menu/burrata.jpg",
+        image:
+          "https://images.unsplash.com/photo-1626200419199-391ae4be7a41?w=800&q=80",
         badges: ["Signature"],
       },
       {
         name: "Ember Wings",
         description: "Slow-smoked wings, honey chipotle glaze, pickled slaw",
         price: "$14",
-        image: "/menu/wings.jpg",
+        image:
+          "https://images.unsplash.com/photo-1608039755401-742074f0548d?w=800&q=80",
         badges: ["Spicy"],
       },
       {
         name: "Truffle Arancini",
         description: "Crispy risotto spheres, black truffle, parmesan cream",
         price: "$15",
+        image:
+          "https://images.unsplash.com/photo-1625938145312-c96c67b4d1c5?w=800&q=80",
         badges: ["Vegan"],
       },
       {
         name: "Smoked Beet Tartare",
         description: "Wood-roasted beets, capers, mustard seed, rye crisp",
         price: "$13",
+        image:
+          "https://images.unsplash.com/photo-1512852939750-1305098529bf?w=800&q=80",
         badges: ["Vegan", "GF"],
       },
     ],
@@ -91,39 +98,48 @@ const menuData: MenuCategory[] = [
         description:
           "45-day dry-aged ribeye, bone marrow butter, charred shallot",
         price: "$52",
-        image: "/menu/ribeye.jpg",
+        image:
+          "https://images.unsplash.com/photo-1600891964092-4316c288032e?w=800&q=80",
         badges: ["Signature", "GF"],
       },
       {
         name: "Wood-Fired Salmon",
         description: "Cedar plank salmon, citrus glaze, charred fennel",
         price: "$34",
-        image: "/menu/salmon.jpg",
+        image:
+          "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=800&q=80",
         badges: ["GF"],
       },
       {
         name: "Truffle Risotto",
         description: "Arborio rice, black truffle, aged parmesan",
         price: "$28",
-        image: "/menu/risotto.jpg",
+        image:
+          "https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=800&q=80",
         badges: ["Vegan"],
       },
       {
         name: "Ember Lamb Chops",
         description: "Harissa-rubbed lamb, mint yogurt, pomegranate",
         price: "$42",
+        image:
+          "https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80",
         badges: ["Spicy", "GF"],
       },
       {
         name: "Fire-Roasted Half Chicken",
         description: "Brined 24h, smoked paprika rub, charred lemon",
         price: "$29",
+        image:
+          "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=800&q=80",
         badges: ["GF"],
       },
       {
         name: "Charred Cauliflower Steak",
         description: "Tahini, dukkah, golden raisins, herb oil",
         price: "$24",
+        image:
+          "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&q=80",
         badges: ["Vegan", "GF"],
       },
     ],
@@ -137,24 +153,32 @@ const menuData: MenuCategory[] = [
         name: "Tomahawk (for 2)",
         description: "60-day dry-aged tomahawk, smoked salt, chimichurri",
         price: "$95",
+        image:
+          "https://images.unsplash.com/photo-1546964124-0cce460f38ef?w=800&q=80",
         badges: ["Signature"],
       },
       {
         name: "Wagyu Flat Iron",
         description: "A5 wagyu, bone marrow jus, charred spring onion",
         price: "$68",
+        image:
+          "https://images.unsplash.com/photo-1588168333986-5078d3ae3976?w=800&q=80",
         badges: ["GF"],
       },
       {
         name: "Smoked Short Rib",
         description: "12-hour smoked, coffee rub, horseradish cream",
         price: "$44",
+        image:
+          "https://images.unsplash.com/photo-1432139555190-58524dae6a55?w=800&q=80",
         badges: ["Signature"],
       },
       {
         name: "Whole Grilled Branzino",
         description: "Lemon, thyme, olive oil, sea salt",
         price: "$38",
+        image:
+          "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=800&q=80",
         badges: ["GF"],
       },
     ],
@@ -168,23 +192,31 @@ const menuData: MenuCategory[] = [
         name: "Charred Broccolini",
         description: "Chili flakes, lemon, toasted almond",
         price: "$9",
+        image:
+          "https://images.unsplash.com/photo-1584270354949-c26b0d5b4a0c?w=800&q=80",
         badges: ["Vegan", "GF"],
       },
       {
         name: "Truffle Fries",
         description: "Hand-cut, truffle oil, parmesan, chive",
         price: "$11",
+        image:
+          "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=800&q=80",
       },
       {
         name: "Ember Potatoes",
         description: "Fire-roasted, rosemary, garlic aioli",
         price: "$8",
+        image:
+          "https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=800&q=80",
         badges: ["Vegan"],
       },
       {
         name: "Smoked Corn Ribs",
         description: "Chipotle butter, cotija, lime",
         price: "$10",
+        image:
+          "https://images.unsplash.com/photo-1551754655-cd27e38d2076?w=800&q=80",
         badges: ["Spicy"],
       },
     ],
@@ -198,26 +230,31 @@ const menuData: MenuCategory[] = [
         name: "Burnt Basque Cheesecake",
         description: "Caramelized top, berry compote",
         price: "$12",
-        image: "/menu/cheesecake.jpg",
+        image:
+          "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=800&q=80",
         badges: ["Signature"],
       },
       {
         name: "Molten Chocolate",
         description: "Dark chocolate lava, vanilla bean ice cream",
         price: "$11",
-        image: "/menu/chocolate.jpg",
+        image:
+          "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=800&q=80",
       },
       {
         name: "Smoked Honey Panna Cotta",
         description: "Applewood smoked honey, toasted almonds",
         price: "$10",
-        image: "/menu/panna.jpg",
+        image:
+          "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=800&q=80",
         badges: ["GF"],
       },
       {
         name: "Campfire S'mores Tart",
         description: "Torched marshmallow, graham crust, dark ganache",
         price: "$12",
+        image:
+          "https://images.unsplash.com/photo-1568051243851-f9b136146e97?w=800&q=80",
         badges: ["New"],
       },
     ],
@@ -231,23 +268,31 @@ const menuData: MenuCategory[] = [
         name: "Smoked Old Fashioned",
         description: "Bourbon, applewood smoke, orange bitters",
         price: "$16",
+        image:
+          "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&q=80",
         badges: ["Signature"],
       },
       {
         name: "Ember Margarita",
         description: "Mezcal, chili-infused agave, charred lime",
         price: "$15",
+        image:
+          "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=800&q=80",
         badges: ["Spicy"],
       },
       {
         name: "House Red / White",
         description: "Rotating selection, ask your server",
         price: "$12",
+        image:
+          "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80",
       },
       {
         name: "Zero-Proof Spritz",
         description: "Blood orange, rosemary, sparkling water",
         price: "$9",
+        image:
+          "https://images.unsplash.com/photo-1546171753-97d7676e4602?w=800&q=80",
         badges: ["Vegan", "GF"],
       },
     ],
@@ -291,7 +336,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-neutral-950 text-neutral-100 font-sans overflow-x-hidden">
-      {/* Ambient glow */}
       <div className="pointer-events-none fixed inset-0 z-0">
         <div className="absolute -top-40 -left-40 h-96 w-96 rounded-full bg-orange-600/20 blur-3xl" />
         <div className="absolute top-1/3 -right-40 h-96 w-96 rounded-full bg-red-600/20 blur-3xl" />
@@ -358,8 +402,8 @@ export default function Home() {
         >
           <div className="relative h-full w-full">
             <Image
-              src="/hero.jpg"
-              alt="Fire-grilled dishes at Fork & Flame"
+              src="https://images.unsplash.com/photo-1544025162-d76694265947?w=1920&q=80"
+              alt="Fire-grilled steak at Fork & Flame"
               fill
               priority
               className="object-cover opacity-40"
@@ -789,7 +833,7 @@ export default function Home() {
         </div>
 
         <p className="mt-16 text-xs tracking-widest text-neutral-600 uppercase">
-          © {2026} Fork & Flame · All rights reserved
+          © 2026 Fork & Flame · All rights reserved
         </p>
       </section>
     </div>
